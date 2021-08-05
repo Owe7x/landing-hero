@@ -1,0 +1,26 @@
+.header {
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0 22px;
+    }
+    &-ul {
+        display: flex;
+        a {
+            margin-right: 60px;
+            text-decoration: none;
+            color: #fff;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &-mail {
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 300;
+        }
+    }
+}

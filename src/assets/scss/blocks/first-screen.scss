@@ -1,0 +1,49 @@
+.first-screen {
+    background-image: url(../images/bg-1.png);
+    position: relative;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    &-blocks {
+        padding: 136px 0 105px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-text {
+        margin-top: 95px;
+    }
+    &::after {
+        display: block;
+        content: '';
+        width: 1000px;
+        height: 1000px;
+        background: radial-gradient(50% 50% at 50% 50%, #00FF19 0%, rgba(0, 0, 0, 0) 100%);
+        position: absolute;
+        left: -650px;
+        top: 0;
+        z-index: 0;
+    }
+    &-offer {
+        text-align: center;
+        color: #9F9F9F;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 104px;
+        position: relative;
+        &::after {
+            display: block;
+            content: '';
+            background: url(../images/arrow-1.png);
+            width: 22px;
+            height: 12px;
+            position: absolute;
+            top: 31px;
+            left: 50%;
+            transform: translateX(-11px);
+        }
+    }
+}

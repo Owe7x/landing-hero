@@ -1,0 +1,71 @@
+.second-screen {
+    &-blocks {
+        margin-top: 51px;
+        display: flex;
+        flex-flow: row wrap;
+        height: auto;
+    }
+    &-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding: 38px 28px 21px;
+        background: #000;
+        position: absolute;
+        cursor: pointer;
+        height: 326px;
+        &__img {
+            margin: 0 auto;
+        }
+        &__title {
+            font-size: 22px;
+            line-height: 24px;
+            color: #fff;
+            font-weight: 500;
+        }
+        &__li {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            list-style: none;
+            margin-bottom: 10px;
+        }
+    }
+}
+#block-1-text {
+    display: none;
+}
+#block-2-text {
+    display: none;
+}
+#block-3-text {
+    display: none;
+}
+#block-4-text {
+    display: none;
+}
+#block-5-text {
+    display: none;
+}
+#block-6-text {
+    display: none;
+}
+#block-1 {
+    top: 0;
+}
+#block-2 {
+    top: 0;
+}
+#block-3 {
+    top: 0;
+}
+#block-4 {
+    bottom: 0;
+}
+#block-5 {
+    bottom: 0;
+}
+#block-6 {
+    bottom: 0;
+}
