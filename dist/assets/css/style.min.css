@@ -468,18 +468,20 @@ body {
   margin-top: 51px;
   display: flex;
   flex-flow: row wrap;
-  height: auto; }
+  justify-content: space-between;
+  height: auto;
+  background: #fff; }
 
 .second-screen-block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  padding: 38px 28px 21px;
+  padding: 20px 28px 21px;
   background: #000;
   position: absolute;
   cursor: pointer;
-  height: 326px; }
+  height: 350px; }
   .second-screen-block__img {
     margin: 0 auto; }
   .second-screen-block__title {
@@ -495,22 +497,22 @@ body {
     margin-bottom: 10px; }
 
 #block-1-text {
-  display: none; }
+  opacity: 0; }
 
 #block-2-text {
-  display: none; }
+  opacity: 0; }
 
 #block-3-text {
-  display: none; }
+  opacity: 0; }
 
 #block-4-text {
-  display: none; }
+  opacity: 0; }
 
 #block-5-text {
-  display: none; }
+  opacity: 0; }
 
 #block-6-text {
-  display: none; }
+  opacity: 0; }
 
 #block-1 {
   top: 0; }
@@ -531,7 +533,7 @@ body {
   bottom: 0; }
 
 .col {
-  flex: 0 0 33.3%;
+  flex: 0 0 32%;
   position: relative;
-  height: 326px;
+  height: 350px;
   margin-bottom: 20px; }
