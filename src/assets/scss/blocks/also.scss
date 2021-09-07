@@ -1,0 +1,33 @@
+.also {
+    margin-top: 150px;
+    margin-bottom: 200px;
+    &__title {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 19px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__block {
+        img {
+            width: 100%;
+            height: auto;
+        }
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        &-title {
+            color: #9F9F9F;
+            font-size: 16px;
+            line-height: 16px;
+            max-width: 167px;
+        }
+    }
+}

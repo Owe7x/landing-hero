@@ -152,3 +152,33 @@ if (window.matchMedia('(max-width: 1400px)').matches)  {
               $('#block-6-text').animate({ opacity: 0 });
   });
 }
+
+$('.stage').scroll(function() {
+
+	var target = $(this).scrollTop();
+
+	if(target == 0) {
+        $('#stage-block-1').addClass('stages-flex')
+        $('#stage-block-1').removeClass('stages-none')
+        $('#stage-block-2').removeClass('stages-flex')
+	}
+    if(target >= 100) {
+        $('#stage-block-2').addClass('stages-flex')
+        $('#stage-block-1').addClass('stages-none')
+        $('#stage-block-2').removeClass('stages-none')
+        $('#stage-block-3').addClass('stages-none')
+    }
+    if(target >= 200) {
+        $('#stage-block-3').addClass('stages-flex')
+        $('#stage-block-2').addClass('stages-none')
+        $('#stage-block-4').removeClass('stages-flex')
+        $('#stage-block-3').removeClass('stages-none')
+    } 
+    if(target >= 300) {
+        $('#stage-block-4').addClass('stages-flex')
+        $('#stage-block-3').addClass('stages-none')
+        
+    } 
+    console.log(target);
+
+});

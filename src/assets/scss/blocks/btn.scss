@@ -8,4 +8,21 @@
     font-size: 20px;
     line-height: 20px;
     cursor: pointer;
+    font-family: 'Muller';
+}
+.btn-long {
+    background-image: url(../images/btn-long.png);
+    width: 320px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    font-family: 'Muller';
+}
+.btn__long {
+    max-width: 320px;
+    margin: 30px auto 150px;
 }

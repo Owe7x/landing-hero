@@ -1,0 +1,117 @@
+.contact {
+    position: relative;
+    &::after {
+        display: block;
+        content: '';
+        background-image: url(../images/contact-1.png);
+        width: 138px;
+        height: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__title {
+        font-size: 40px;
+        line-height: 49px;
+        text-transform: uppercase;
+        margin-bottom: 80px;
+    }
+}
+
+.form-blocks {
+    display: flex;
+}
+.form-block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+.form-select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #C4C4C4;
+    padding-bottom: 11px;
+    width: 340px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Muller';
+    margin-bottom: 50px;
+}
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 340px;
+    padding-bottom: 11px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    &::placeholder {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 16px;
+        color: #C4C4C4;
+        font-family: 'Muller';
+    }
+}
+.form-btn {
+    background: transparent;
+    border: 1px solid #fff;
+    width: 190px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Muller';
+    text-align: center;
+    margin-top: 50px;
+}
+textarea {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    border: none;
+    padding: 30px 20px;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Muller';
+    font-weight: 300;
+}
+.textarea__p {
+    color: rgba(196, 196, 196, 0.5);
+    font-size: 16px;
+    font-family: 'Muller';
+    font-weight: 300;
+    position: absolute;
+    top: 27px;
+    left: 21px;
+}
+.textarea {
+    position: relative;
+}
+.bg {
+    position: relative;
+    &::after {
+        display: block;
+        content: '';
+        background-image: url(../images/contact-bg.png);
+        width: 492px;
+        height: 260px;
+        position: absolute;
+        top: 160px;
+        right: -235px;
+    }
+    &::before {
+        content: '';
+        display: block;
+        background: radial-gradient(50% 50% at 50% 50%, #00FF94 0%, rgba(0, 0, 0, 0) 100%);
+        position: absolute;
+        top: -200px;
+        right: -700px;
+        width: 1000px;
+        height: 1000px;
+    }
+}
