@@ -2,5 +2,10 @@
     flex: 0 0 32%;
     position: relative;
     height: 350px;
-    margin-bottom: 20px;
+    @include breakpoint($bp-768) {
+        flex: 0 0 47%;
+    }
+    @include breakpoint($bp-550) {
+        flex: 0 0 100%;
+    } 
 }

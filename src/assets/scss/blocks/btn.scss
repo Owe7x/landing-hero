@@ -9,6 +9,10 @@
     line-height: 20px;
     cursor: pointer;
     font-family: 'Muller';
+    @include breakpoint($bp-425) {
+        display: block;
+        margin: 0 auto;
+    } 
 }
 .btn-long {
     background-image: url(../images/btn-long.png);
@@ -21,8 +25,16 @@
     line-height: 20px;
     cursor: pointer;
     font-family: 'Muller';
+    @include breakpoint($bp-425) {
+        width: 280px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }  
 }
 .btn__long {
     max-width: 320px;
     margin: 30px auto 150px;
+    @include breakpoint($bp-425) {
+        max-width: 280px;
+    }  
 }

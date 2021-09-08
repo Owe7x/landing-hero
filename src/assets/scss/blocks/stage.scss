@@ -3,7 +3,14 @@
     padding-bottom: 100px;
     overflow-y: auto;     
     height: 490px;     
-    width: 100%;     
+    width: 100%;
+    @include breakpoint($bp-850) {
+        height: auto;
+        overflow-y: unset;
+    }   
+    @include breakpoint($bp-425) {
+        padding-bottom: 50px;
+    }  
     &__title {
         font-size: 20px;
         line-height: 30px;
@@ -21,26 +28,57 @@
         line-height: 48px;
         max-width: 337px;
         margin-bottom: 20px;
+        @include breakpoint($bp-850) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        @include breakpoint($bp-425) {
+            font-size: 25px;
+            line-height: 30px;
+        }
     }
     &__item {
         font-size: 20px;
         line-height: 30px;
         font-weight: 300;
+        @include breakpoint($bp-425) {
+            font-size: 18px;
+            line-height: 25px;
+        }
     }
     &__img {
         position: relative;
         width: 45%;
+        @include breakpoint($bp-768) {
+            display: none;
+        }  
     }
     &__img_absolute {
         position: absolute;
         top: -80px;
         right: 0;
+        @include breakpoint($bp-1024) {
+            width: 100%;
+            top: 0;
+            right: 0;
+        }
+        @include breakpoint($bp-850) {
+            width: 90%;
+        }
     }
     &__img_absolute-4 {
         position: absolute;
         top: -80px;
         right: -100px;
         z-index: 2;
+        @include breakpoint($bp-1024) {
+            width: 100%;
+            top: 0;
+            right: 0;
+        }
+        @include breakpoint($bp-850) {
+            width: 90%;
+        }
     }
     &__img-default {
         width: 100%;
@@ -48,6 +86,11 @@
     }
     &__info {
         width: 55%;
+        img {
+            @include breakpoint($bp-425) {
+                width: 100%;
+            }
+        }
     }
     &__ul {
         max-width: 543px;
@@ -98,7 +141,16 @@
     position: absolute;
     width: 1000px;
     top: 110px;
-    
+    @include breakpoint($bp-1024) {
+        width: 800px;
+        margin: 0 auto;
+    }
+    @include breakpoint($bp-850) {
+        opacity: 1;
+        position: unset;
+        height: auto;
+        width: 100%;
+    }  
 }
 #stage-block-2 {
     scroll-snap-align: start;
@@ -109,6 +161,15 @@
     opacity: 0;
     width: 1000px;
     top: 200px;
+    @include breakpoint($bp-1024) {
+        width: 800px;
+    }
+    @include breakpoint($bp-850) {
+        opacity: 1;
+        position: unset;
+        height: auto;
+        width: 100%;
+    }  
 }
 #stage-block-3 {
     scroll-snap-align: start;
@@ -119,6 +180,15 @@
     opacity: 0;
     width: 1000px;
     top: 300px;
+    @include breakpoint($bp-1024) {
+        width: 800px;
+    }
+    @include breakpoint($bp-850) {
+        opacity: 1;
+        position: unset;
+        height: auto;
+        width: 100%;
+    }  
 }
 #stage-block-4 {
     scroll-snap-align: start;
@@ -129,6 +199,15 @@
     opacity: 0;
     width: 1000px;
     top: 400px;
+    @include breakpoint($bp-1024) {
+        width: 800px;
+    }
+    @include breakpoint($bp-850) {
+        opacity: 1;
+        position: unset;
+        height: auto;
+        width: 100%;
+    }  
 }
 
 .stages-flex {
@@ -143,7 +222,35 @@
 }
 .stage__blocks {
     height: 690px;
+    @include breakpoint($bp-850) {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }  
 }
 .stage::-webkit-scrollbar {
     width: 0;
-  }
+}
+.stage__img_mobile {
+    display: none;
+    @include breakpoint($bp-768) {
+        display: block;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+.stage__block {
+    @include breakpoint($bp-768) {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+.stage__info {
+    @include breakpoint($bp-768) {
+        width: 100%;
+    }
+}

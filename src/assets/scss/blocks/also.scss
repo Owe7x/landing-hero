@@ -12,8 +12,19 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        @include breakpoint($bp-1024) {
+            column-gap: 30px;
+        }
+        @include breakpoint($bp-768) {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+        }
     }
     &__block {
+        @include breakpoint($bp-768) {
+            max-width: 256px;
+        }
         img {
             width: 100%;
             height: auto;

@@ -182,3 +182,10 @@ $('.stage').scroll(function() {
     console.log(target);
 
 });
+
+$(document).ready(function() {
+	$('.menu-burger__header').click(function(){
+        $('.menu-burger__header').toggleClass('open-menu');
+        $('.header-content__mobile').toggleClass('open-menu');
+	});
+});

@@ -15,6 +15,9 @@
     &__blocks {
         display: flex;
         justify-content: space-between;
+        @include breakpoint($bp-768) {
+            flex-direction: column;
+        }
     }
     &__block {
         &-subtitle {
@@ -22,12 +25,23 @@
             font-size: 20px;
             line-height: 19px;
             text-transform: uppercase;
+            @include breakpoint($bp-650) {
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 19px;
+            }
         }
         &-title {
             font-size: 40px;
             line-height: 48px;
             text-transform: uppercase;
             margin-bottom: 55px;
+            @include breakpoint($bp-650) {
+                font-size: 30px;
+            }
+            @include breakpoint($bp-350) {
+                font-size: 25px;
+            }
         }
         &-p {
             font-size: 27px;
@@ -35,6 +49,10 @@
             text-align: justify;
             max-width: 409px;
             margin-bottom: 30px;
+            @include breakpoint($bp-650) {
+                font-size: 22px;
+                line-height: 31px;
+            }
         }
         &-p-2 {
             text-align: right;
@@ -45,6 +63,15 @@
             letter-spacing: 0.055em;
             max-width: 424px;
             margin-top: 150px;
+            @include breakpoint($bp-768) {
+                margin-left: auto;
+            }
+            @include breakpoint($bp-650) {
+                font-weight: 300;
+                font-size: 25.8649px;
+                line-height: 32px;
+                margin-top: 100px;
+            }
         }
     }
 }
@@ -53,6 +80,11 @@
     justify-content: space-between;
     margin-top: 100px;
     padding-bottom: 30px;
+    @include breakpoint($bp-768) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
     &__p-center {
         text-align: center;
         font-size: 14px;
@@ -64,6 +96,9 @@
     &__p-right {
         display: flex;
         flex-direction: column;
+        @include breakpoint($bp-768) {
+            align-items: center;
+        }
         a {
             text-align: center;
             font-size: 14px;

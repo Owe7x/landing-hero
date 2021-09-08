@@ -9,22 +9,40 @@
         position: absolute;
         top: 0;
         right: 0;
+        @include breakpoint($bp-650) {
+            top: 50px;
+            left: 5px;
+        }
+        @include breakpoint($bp-350) {
+            top: 90px;
+        }
     }
     &__title {
         font-size: 40px;
         line-height: 49px;
         text-transform: uppercase;
         margin-bottom: 80px;
+        @include breakpoint($bp-650) {
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
 }
 
 .form-blocks {
     display: flex;
+    @include breakpoint($bp-768) {
+        flex-direction: column;
+    }
 }
 .form-block {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
+    @include breakpoint($bp-650) {
+        align-items: center;
+        margin-right: 0;
+    }
 }
 .form-select {
     background: transparent;
@@ -38,6 +56,9 @@
     line-height: 16px;
     font-family: 'Muller';
     margin-bottom: 50px;
+    @include breakpoint($bp-375) {
+        width: 300px;
+    }
 }
 input {
     background: transparent;
@@ -56,6 +77,9 @@ input {
         color: #C4C4C4;
         font-family: 'Muller';
     }
+    @include breakpoint($bp-375) {
+        max-width: 300px;
+    }
 }
 .form-btn {
     background: transparent;
@@ -68,6 +92,22 @@ input {
     font-family: 'Muller';
     text-align: center;
     margin-top: 50px;
+    @include breakpoint($bp-768) {
+        display: none;
+    }
+}
+.form-btn_mobile {
+    display: none;
+    @include breakpoint($bp-768) {
+        display: block;
+        width: 320px;
+    }
+    @include breakpoint($bp-650) {
+        margin: 50px auto 0;
+    }
+    @include breakpoint($bp-350) {
+        width: 290px;
+    }
 }
 textarea {
     background: rgba(255, 255, 255, 0.05);
@@ -79,6 +119,16 @@ textarea {
     color: #fff;
     font-family: 'Muller';
     font-weight: 300;
+    @include breakpoint($bp-768) {
+        max-width: 340px;
+        text-align: left;
+    }
+    @include breakpoint($bp-650) {
+        max-width: 360px;
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+    }
 }
 .textarea__p {
     color: rgba(196, 196, 196, 0.5);
@@ -103,6 +153,15 @@ textarea {
         position: absolute;
         top: 160px;
         right: -235px;
+        @include breakpoint($bp-1024) {
+            display: none;
+        }
+        @include breakpoint($bp-768) {
+            display: block;
+        }
+        @include breakpoint($bp-650) {
+            display: none;
+        }
     }
     &::before {
         content: '';
@@ -113,5 +172,6 @@ textarea {
         right: -700px;
         width: 1000px;
         height: 1000px;
+        z-index: -1;
     }
 }

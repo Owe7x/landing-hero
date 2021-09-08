@@ -1,14 +1,24 @@
 .key {
     &__info {
         width: 55%;
+        @include breakpoint($bp-900) {
+            width: 100%;
+        }
     }
     &__img {
         width: 45%;
         position: relative;
+        @include breakpoint($bp-900) {
+            display: none;
+        }
     }
     &__block {
         display: flex;
         margin-bottom: 135px;
+        @include breakpoint($bp-900) {
+            max-width: 500px;
+            margin: 0 auto 50px;
+        }
     }
     &__title {
         font-size: 20px;
@@ -48,6 +58,9 @@
     }
     &__number {
         margin-bottom: 100px;
+        @include breakpoint($bp-425) {
+            margin-bottom: 40px;
+        }
     }
     &__number-2 {
         margin-bottom: 35px;
@@ -82,6 +95,17 @@
         font-weight: 300;
         text-align: right;
         max-width: 433px;
+        @include breakpoint($bp-425) {
+            max-width: 285px;
+            text-align: left;
+            margin-left: auto;
+        }
+        @include breakpoint($bp-425) {
+            max-width: 235px;
+        }
+        @include breakpoint($bp-320) {
+            max-width: 180px;
+        }
     }
     &__btn {
         width: 340px;
@@ -93,6 +117,11 @@
         text-align: center;
         color: #fff;
         font-family: 'Muller';
+        @include breakpoint($bp-375) {
+            width: 280px;
+            margin: 0 auto;
+            display: block;
+        }
         &_green {
             background-color:    #8AC600;
         }
@@ -126,11 +155,20 @@
     display: flex;
     align-items: center;
     margin-bottom: 28px;
+    @include breakpoint($bp-900) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 .key__info-subtitle-2 {
     margin-left: 75px;
     font-size: 14px;
     line-height: 14px;
+    @include breakpoint($bp-900) {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
 }
 .margin-0 {
     margin: 0;
@@ -143,6 +181,9 @@
 .key__info-block-subtitle {
     display: flex;
     margin-bottom: 44px;
+    @include breakpoint($bp-425) {
+        flex-direction: column;
+    }
 }
 .key__info-block-subtitle-2 {
     text-transform: uppercase;
@@ -157,6 +198,9 @@
     line-height: 24px;
     font-weight: 200;
     max-width: 262px;
+    @include breakpoint($bp-425) {
+        margin-left: 0;
+    }
 }
 .key__number-img-2 {
     max-width: 101px;
@@ -174,6 +218,9 @@
     font-size: 48px;
     line-height: 48px;
     color: #1794AF;
+    @include breakpoint($bp-320) {
+        font-size: 40px;
+    }
 }
 .key__info-info-p {
     font-size: 14px;
@@ -195,6 +242,11 @@
     font-size: 11px;
     line-height: 124%;
     margin-left: 20px;
+    @include breakpoint($bp-425) {
+        font-size: 15px;
+        line-height: 20px;
+        max-width: 250px;
+    }
 }
 .key__number-3 {
     display: flex;
@@ -213,6 +265,9 @@
         position: absolute;
         top: 0;
         left: 110%;
+        @include breakpoint($bp-320) {
+            left: 105%;
+        }
     }
 }
 .key-img-3 {
@@ -236,6 +291,14 @@
         position: absolute;
         top: 0;
         left: 110%;
+        @include breakpoint($bp-650) {
+            top: 50px;
+            left: 0;
+        }
+        @include breakpoint($bp-320) {
+            top: 50px;
+            left: 110%;
+        }
     }
 }
 .key__img-b-4 {
@@ -278,4 +341,49 @@
     margin-top: 40px;
     max-width: 400px;
     margin-bottom: 40px;
+}
+.key__img_mobile {
+    display: none;
+    @include breakpoint($bp-900) {
+        display: block;
+    }
+    @include breakpoint($bp-425) {
+        display: none;
+    }
+    img {
+        width: 100%;
+    }
+}
+.key__img_mobile-1 {
+    margin-top: -100px;
+}
+.key__img_mobile-425 {
+    display: none; 
+    @include breakpoint($bp-425) {
+        display: block;
+        position: relative;
+    }
+}
+.key__img_425-1 {
+    position: relative;
+    top: -40px;
+    right: -20px;
+    @include breakpoint($bp-320) {
+        right: 20px;
+    }
+}
+.key__img_425-2 {
+    position: relative;
+    @include breakpoint($bp-320) {
+        right: 40px;
+    }
+}
+.key__img_425-3 {
+    position: relative;
+    left: -20px;
+    top: 30px;
+}
+.key__img_425-4 {
+    position: relative;
+    left: -20px;
 }

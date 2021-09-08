@@ -2,6 +2,7 @@
     background-image: url(../images/bg-1.png);
     position: relative;
     background-repeat: no-repeat;
+    background-size: contain;
     margin-bottom: 80px;
     .container {
         position: relative;
@@ -11,9 +12,21 @@
         padding: 136px 0 105px;
         display: flex;
         justify-content: space-between;
+        @include breakpoint($bp-768) {
+            flex-direction: column;
+            padding: 20px 0;
+        } 
     }
     .main-text {
         margin-top: 95px;
+        @include breakpoint($bp-768) {
+            margin-top: 0;
+        }
+        @include breakpoint($bp-425) {
+            text-align: center;
+            font-size: 30px;
+            line-height: 38px;
+        } 
     }
     &::after {
         display: block;
@@ -45,5 +58,23 @@
             left: 50%;
             transform: translateX(-11px);
         }
+    }
+}
+.first-screen-img {
+    @include breakpoint($bp-768) {
+        display: none;
+    } 
+}
+.first-screen-img_mobile {
+    display: none;
+    @include breakpoint($bp-768) {
+        display: flex;
+        justify-content: center;
+    } 
+    img {
+        width: 50%;
+        @include breakpoint($bp-425) {
+            width: 100%;
+        } 
     }
 }

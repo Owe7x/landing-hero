@@ -27,7 +27,7 @@
                                 <nav class="header-nav">
                                     <ul class="header-ul">
                                         <a href=""><li class="header__link">преимущества</li></a>
-                                        <a href=""><li class="header__link">опыт и кейсы</li></a>
+                                        <a href="#key"><li class="header__link">опыт и кейсы</li></a>
                                         <a href=""><li class="header__link">возможности таргета</li></a>
                                         <a href=""><li class="header__link">о нас</li></a>
                                     </ul>
@@ -36,6 +36,19 @@
                             <div class="header-mail">
                                 <a href="mailto:more@heroinmarketing.com">more@heroinmarketing.com</a>
                             </div>
+                            <div class="menu-burger__header">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="header-content__mobile">
+                            <img src="assets/images/logo.svg" alt="" class="header-mobile__logo">
+                            <ul class="header-ul__mobile">
+                                <a href=""><li class="header__link_mobile">преимущества</li></a>
+                                <a href=""><li class="header__link_mobile">опыт и кейсы</li></a>
+                                <a href=""><li class="header__link_mobile">возможности таргета</li></a>
+                                <a href=""><li class="header__link_mobile">о нас</li></a>
+                            </ul>
+                            <a href="mailto:more@heroinmarketing.com" class="header-mobile_email">more@heroinmarketing.com</a>
                         </div>
                     </div>
                 </header>
@@ -45,6 +58,9 @@
                 <section class="first-screen">
                     <div class="container">
                         <div class="first-screen-blocks">
+                            <div class="first-screen-img_mobile">
+                                <img src="assets/images/wifi.gif" alt="" >
+                            </div>
                             <div class="first-screen-block">
                                 <h1 class="main-text">мы умеем кодить, 
                                     понимая все бизнес 
@@ -217,27 +233,31 @@
                     <section class="stage" >
                         <div class="container">
                             <div class="stage__blocks">
-                                <div class="stage__block">
-                                    <div class="stage__block" id="stage-block-1">
-                                        <div class="stage__info">
-                                            <img src="assets/images/stage-1.svg" alt="" class="stage__img-stage">
-                                            <p class="stage__info-title">БРИФ И ПОСТАНОВКА ЗАДАЧ</p>
-                                            <ul class="stage__ul">
-                                                <li class="stage__item">1. Знакомство и заполнение брифа</li>
-                                                <li class="stage__item">2. Определение основной идеи и задачи сайта</li>
-                                                <li class="stage__item">3. Составление технического задания</li>
-                                                <li class="stage__item">4. Исследование рынка и поиск креативных концепций</li>
-                                            </ul>
+                                <div class="stage__block" id="stage-block-1">
+                                    <div class="stage__info">
+                                        <img src="assets/images/stage-1.svg" alt="" class="stage__img-stage">
+                                        <p class="stage__info-title">БРИФ И ПОСТАНОВКА ЗАДАЧ</p>
+                                        <div class="stage__img_mobile">
+                                            <img src="assets/images/stage-img-1.svg" alt="">
                                         </div>
-                                        <div class="stage__img">
-                                            <img src="assets/images/stage-img-1.svg" alt="" class="stage__img_absolute">
-                                        </div>
+                                        <ul class="stage__ul">
+                                            <li class="stage__item">1. Знакомство и заполнение брифа</li>
+                                            <li class="stage__item">2. Определение основной идеи и задачи сайта</li>
+                                            <li class="stage__item">3. Составление технического задания</li>
+                                            <li class="stage__item">4. Исследование рынка и поиск креативных концепций</li>
+                                        </ul>
+                                    </div>
+                                    <div class="stage__img">
+                                        <img src="assets/images/stage-img-1.svg" alt="" class="stage__img_absolute">
                                     </div>
                                 </div>
                                 <div class="stage__block" id="stage-block-2">
                                     <div class="stage__info">
                                         <img src="assets/images/stage-2.svg" alt="" class="stage__img-stage">
                                         <p class="stage__info-title">ПРОТОТИПИРОВАНИЕ</p>
+                                        <div class="stage__img_mobile">
+                                            <img src="assets/images/stage-img-2.png" alt="" >
+                                        </div>
                                         <ul class="stage__ul">
                                             <li class="stage__item">1. Разработка структуры сайта и основных блоков </li>
                                             <li class="stage__item">2. Создание эскиза сайта</li>
@@ -252,6 +272,9 @@
                                     <div class="stage__info">
                                         <img src="assets/images/stage-3.svg" alt="" class="stage__img-stage">
                                         <p class="stage__info-title">РАЗРАБОТКА</p>
+                                        <div class="stage__img_mobile">
+                                            <img src="assets/images/stage-img-3.png" alt="">
+                                        </div>
                                         <ul class="stage__ul">
                                             <li class="stage__item">1. Программирование функционала </li>
                                             <li class="stage__item">2. Верстка и ее интеграция в систему управления сайтом</li>
@@ -267,6 +290,9 @@
                                     <div class="stage__info">
                                         <img src="assets/images/stage-4.svg" alt="" class="stage__img-stage">
                                         <p class="stage__info-title">ДИЗАЙН</p>
+                                        <div class="stage__img_mobile">
+                                            <img src="assets/images/stage-img-4.png" alt="">
+                                        </div>
                                         <ul class="stage__ul">
                                             <li class="stage__item">1. Создание уникального визуального стиля: композиция, цвет, шрифты </li>
                                             <li class="stage__item">2. Разработка дизайна адаптивной версии</li>
@@ -288,7 +314,7 @@
                         Заказать проект
                     </button>
                 </div>
-                <section class="key">
+                <section class="key" id="key">
                     <div class="container">
                         <h2 class="key__title">
                             НАШИ КЕЙСЫ
@@ -300,6 +326,12 @@
                                     <br>
                                     приложения
                                 </h3>
+                                <div class="key__img_mobile">
+                                    <img src="assets/images/key-img-1.png" alt="" class="key__img_mobile-1">
+                                </div>
+                                <div class="key__img_mobile-425">
+                                    <img src="assets/images/key-mobile-1.png" alt="" class="key__img_425-1">
+                                </div>
                                 <p class="key__info-subtitle">
                                     Пятёрочка
                                 </p>
@@ -338,6 +370,12 @@
                                         Техническая разработка портала
                                         <a href="http://spacelab.kaaspersky.ru/site/game" target="_blank" rel="noopener noreferrer" class="key__orange">spacelab.kaaspersky.ru/site/game</a>
                                     </p>
+                                </div>
+                                <div class="key__img_mobile">
+                                    <img src="assets/images/key-img-2.png" alt="" class="key__img_mobile-2">
+                                </div>
+                                <div class="key__img_mobile-425">
+                                    <img src="assets/images/key-mobile-2.png" alt="" class="key__img_425-2">
                                 </div>
                                 <div class="key__info-block-subtitle">
                                     <h3 class="key__info-block-subtitle-2">
@@ -381,6 +419,12 @@
                                     <br>
                                     LIVESTREAM-ПЛАТФОРМА
                                 </h3>
+                                <div class="key__img_mobile">
+                                    <img src="assets/images/key-img-3.png" alt="" class="key__img_mobile-3">
+                                </div>
+                                <div class="key__img_mobile-425">
+                                    <img src="assets/images/key-mobile-3.png" alt="" class="key__img_425-3">
+                                </div>
                                 <p class="key__info-description-2">
                                     Для проведения ключевого <br> внутреннего мероприятия компании по итогам года
                                 </p>
@@ -454,6 +498,12 @@
                                         X5 Retail Group
                                     </span>
                                 </h3>
+                                <div class="key__img_mobile">
+                                    <img src="assets/images/key-img-4.png" alt="" class="key__img_mobile-4">
+                                </div>
+                                <div class="key__img_mobile-425">
+                                    <img src="assets/images/key-mobile-4.png" alt="" class="key__img_425-4">
+                                </div>
                                 <p class="key__info-description-4">
                                     Создание платформы для проведения корпоративного online-марафона
                                 </p>
@@ -529,12 +579,15 @@
                                     </div>
                                     <div class="form-block">
                                         <textarea name="textarea" id="" cols="27" rows="15" class="textarea" placeholder="">
-                                            Опишите кратко задачу
+                                                    Опишите кратко задачу
                 
-                                            Создать корпоративный сайт для крупной розничной сети, хотим привлечь наших покупателей и работников к коммуникации...
+                                                    Создать корпоративный сайт для крупной розничной сети, хотим привлечь наших покупателей и работников к коммуникации...
                                         </textarea>
                 
                                     </div>
+                                    <button class="form-btn form-btn_mobile">
+                                        Подать заявку
+                                    </button>
                                 </div>
                             </form>
                         </div>

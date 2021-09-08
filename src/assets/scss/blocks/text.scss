@@ -3,12 +3,16 @@
     line-height: 49px;
     text-transform: uppercase;
     margin-bottom: 30px;
+    
 }
 .subtitle {
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 50px;
+    @include breakpoint($bp-425) {
+        text-align: center;
+    } 
 }
 .default-p {
     font-size: 20px;
