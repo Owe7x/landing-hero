@@ -271,7 +271,7 @@
     &::after {
         display: block;
         content: '';
-        background: url(../images/key-logo.png);
+        background: url(../images/key-logo.svg);
         width: 119px;
         height: 30px;
         position: absolute;
@@ -297,7 +297,7 @@
     &::after {
         display: block;
         content: '';
-        background: url(../images/key-logo-2.png);
+        background: url(../images/key-logo-2.svg);
         width: 135px;
         height: 41px;
         position: absolute;
@@ -382,21 +382,16 @@
 }
 .key__img_425-1 {
     position: relative;
-    top: -120px;
-    right: -20px;
+    top: 30px;
     width: 100%;
-    @include breakpoint($bp-320) {
-        right: 20px;
-        width: 100%;
-        top: -60px;
-        right: -20px;
-    }
+    z-index: 2;
 }
 .key__img_425-2 {
     position: relative;
     width: 100%;
-    left: -20px;
-    top: -40px;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
     @include breakpoint($bp-320) {
         right: 40px;
     }
@@ -404,13 +399,16 @@
 }
 .key__img_425-3 {
     position: relative;
+    z-index: 2;
     left: -20px;
-    top: -60px;
+    top: 0px;
     width: 100%;
 
 }
 .key__img_425-4 {
     position: relative;
+    top: -30px;
+    z-index: 2;
     left: -20px;
     width: 100%;
 }
@@ -422,7 +420,18 @@
 }
 .key__img_mobile-425-2 {
     height: 400px;
-    display: none; 
+    display: none;
+    position: relative;
+    &::after {
+        display: block;
+        content: '';
+        background: radial-gradient(50% 50% at 50% 50%, #FF971A 0%, rgba(0, 0, 0, 0) 100%);
+        width: 454px;
+        height: 454px;
+        position: absolute;
+        top: 20px;
+        left: -20px;
+    }
     @include breakpoint($bp-425) {
         display: block;
     }
@@ -432,7 +441,17 @@
 }
 .key__img_mobile-425-1 {
     height: 400px;
-    display: none; 
+    display: none;
+    position: relative;
+    &::after {
+        display: block;
+        content: '';
+        background: radial-gradient(50% 50% at 50% 50%, #8AC600 0%, rgba(0, 0, 0, 0) 100%);
+        width: 454px;
+        height: 454px;
+        position: absolute;
+        top: -50px;
+    }
     @include breakpoint($bp-425) {
         display: block;
     }
@@ -442,11 +461,39 @@
 }
 .key__img_mobile-425-3 {
     height: 450px;
-    display: none; 
+    display: none;
+    position: relative;
+    &::after {
+        display: block;
+        content: '';
+        background: radial-gradient(50% 50% at 50% 50%, rgba(0, 87, 255, 0.53) 26.35%, rgba(40, 40, 40, 0) 92.5%);
+        width: 654px;
+        height: 654px;
+        position: absolute;
+        top: -100px;
+        left: -250px;
+    }
     @include breakpoint($bp-425) {
         display: block;
     }
     @include breakpoint($bp-320) {
         height: 350px;
+    }
+}
+.key__img_mobile-425-4 {
+    display: none;
+    position: relative;
+    &::after {
+        display: block;
+        content: '';
+        background: radial-gradient(50% 50% at 50% 50%, #FFA800 2.29%, rgba(19, 25, 28, 0) 100%);
+        width: 480px;
+        height: 480px;
+        position: absolute;
+        top: 0px;
+        left: -200px;
+    }
+    @include breakpoint($bp-425) {
+        display: block;
     }
 }
