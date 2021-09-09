@@ -1080,6 +1080,10 @@ body {
   text-align: center;
   color: #fff;
   font-family: 'Muller'; }
+  @media screen and (max-width: 425px) {
+    .key__btn {
+      margin: 0 auto;
+      display: block; } }
   @media screen and (max-width: 375px) {
     .key__btn {
       width: 280px;
@@ -1322,14 +1326,21 @@ body {
 
 .key__img_425-1 {
   position: relative;
-  top: -40px;
-  right: -20px; }
+  top: -120px;
+  right: -20px;
+  width: 100%; }
   @media screen and (max-width: 320px) {
     .key__img_425-1 {
-      right: 20px; } }
+      right: 20px;
+      width: 100%;
+      top: -60px;
+      right: -20px; } }
 
 .key__img_425-2 {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  left: -20px;
+  top: -40px; }
   @media screen and (max-width: 320px) {
     .key__img_425-2 {
       right: 40px; } }
@@ -1337,17 +1348,49 @@ body {
 .key__img_425-3 {
   position: relative;
   left: -20px;
-  top: 30px; }
+  top: -60px;
+  width: 100%; }
 
 .key__img_425-4 {
   position: relative;
-  left: -20px; }
+  left: -20px;
+  width: 100%; }
 
 .key__info-title_subtitle {
   font-size: 20px;
   text-transform: uppercase;
   max-width: 70%;
   margin-bottom: 20px; }
+
+.key__img_mobile-425-2 {
+  height: 400px;
+  display: none; }
+  @media screen and (max-width: 425px) {
+    .key__img_mobile-425-2 {
+      display: block; } }
+  @media screen and (max-width: 320px) {
+    .key__img_mobile-425-2 {
+      height: 330px; } }
+
+.key__img_mobile-425-1 {
+  height: 400px;
+  display: none; }
+  @media screen and (max-width: 425px) {
+    .key__img_mobile-425-1 {
+      display: block; } }
+  @media screen and (max-width: 320px) {
+    .key__img_mobile-425-1 {
+      height: 330px; } }
+
+.key__img_mobile-425-3 {
+  height: 450px;
+  display: none; }
+  @media screen and (max-width: 425px) {
+    .key__img_mobile-425-3 {
+      display: block; } }
+  @media screen and (max-width: 320px) {
+    .key__img_mobile-425-3 {
+      height: 350px; } }
 
 .contact {
   position: relative; }

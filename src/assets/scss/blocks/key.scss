@@ -125,6 +125,10 @@
         text-align: center;
         color: #fff;
         font-family: 'Muller';
+        @include breakpoint($bp-425) {
+            margin: 0 auto;
+            display: block;
+        }
         @include breakpoint($bp-375) {
             width: 280px;
             margin: 0 auto;
@@ -378,30 +382,71 @@
 }
 .key__img_425-1 {
     position: relative;
-    top: -40px;
+    top: -120px;
     right: -20px;
+    width: 100%;
     @include breakpoint($bp-320) {
         right: 20px;
+        width: 100%;
+        top: -60px;
+        right: -20px;
     }
 }
 .key__img_425-2 {
     position: relative;
+    width: 100%;
+    left: -20px;
+    top: -40px;
     @include breakpoint($bp-320) {
         right: 40px;
     }
+    
 }
 .key__img_425-3 {
     position: relative;
     left: -20px;
-    top: 30px;
+    top: -60px;
+    width: 100%;
+
 }
 .key__img_425-4 {
     position: relative;
     left: -20px;
+    width: 100%;
 }
 .key__info-title_subtitle {
     font-size: 20px;
     text-transform: uppercase;
     max-width: 70%;
     margin-bottom: 20px;
+}
+.key__img_mobile-425-2 {
+    height: 400px;
+    display: none; 
+    @include breakpoint($bp-425) {
+        display: block;
+    }
+    @include breakpoint($bp-320) {
+        height: 330px;
+    }
+}
+.key__img_mobile-425-1 {
+    height: 400px;
+    display: none; 
+    @include breakpoint($bp-425) {
+        display: block;
+    }
+    @include breakpoint($bp-320) {
+        height: 330px;
+    }
+}
+.key__img_mobile-425-3 {
+    height: 450px;
+    display: none; 
+    @include breakpoint($bp-425) {
+        display: block;
+    }
+    @include breakpoint($bp-320) {
+        height: 350px;
+    }
 }
