@@ -709,8 +709,12 @@ body {
   position: relative;
   padding-bottom: 100px;
   overflow-y: auto;
-  height: 490px;
+  height: 550px;
   width: 100%; }
+  @media screen and (max-width: 1024px) {
+    .stage {
+      height: 500px;
+      padding-bottom: 0; } }
   @media screen and (max-width: 850px) {
     .stage {
       height: auto;
@@ -722,7 +726,8 @@ body {
     font-size: 20px;
     line-height: 30px;
     font-weight: 300;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    text-transform: uppercase; }
   .stage__block {
     height: auto; }
   .stage__img-stage {
@@ -740,6 +745,17 @@ body {
       .stage__info-title {
         font-size: 25px;
         line-height: 30px; } }
+  .stage__info_subtitle {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    max-width: 80%; }
+    @media screen and (max-width: 425px) {
+      .stage__info_subtitle {
+        font-size: 18px;
+        line-height: 25px;
+        max-width: 100%; } }
   .stage__item {
     font-size: 20px;
     line-height: 30px;
@@ -756,7 +772,7 @@ body {
         display: none; } }
   .stage__img_absolute {
     position: absolute;
-    top: -80px;
+    top: 0px;
     right: 0; }
     @media screen and (max-width: 1024px) {
       .stage__img_absolute {
@@ -768,7 +784,7 @@ body {
         width: 90%; } }
   .stage__img_absolute-4 {
     position: absolute;
-    top: -80px;
+    top: 0;
     right: -100px;
     z-index: 2; }
     @media screen and (max-width: 1024px) {
@@ -825,101 +841,96 @@ body {
 
 #stage-block-1 {
   scroll-snap-align: start;
-  height: 465px;
+  height: auto;
   box-sizing: border-box;
   display: flex;
-  position: absolute;
+  position: sticky;
   width: 1000px;
-  top: 110px; }
+  top: 0; }
   @media screen and (max-width: 1024px) {
     #stage-block-1 {
       width: 800px;
       margin: 0 auto; } }
   @media screen and (max-width: 850px) {
     #stage-block-1 {
-      opacity: 1;
-      position: unset;
+      display: flex;
       height: auto;
       width: 100%; } }
 
 #stage-block-2 {
   scroll-snap-align: start;
-  height: 465px;
+  height: auto;
   box-sizing: border-box;
   display: flex;
-  position: absolute;
-  opacity: 0;
+  position: sticky;
+  display: none;
   width: 1000px;
-  top: 200px; }
+  top: 0; }
   @media screen and (max-width: 1024px) {
     #stage-block-2 {
-      width: 800px; } }
+      width: 800px;
+      margin: 0 auto; } }
   @media screen and (max-width: 850px) {
     #stage-block-2 {
-      opacity: 1;
-      position: unset;
+      display: flex;
       height: auto;
       width: 100%; } }
 
 #stage-block-3 {
   scroll-snap-align: start;
-  height: 465px;
+  height: auto;
   box-sizing: border-box;
   display: flex;
-  position: absolute;
-  opacity: 0;
+  position: sticky;
+  display: none;
   width: 1000px;
-  top: 300px; }
+  top: 0; }
   @media screen and (max-width: 1024px) {
     #stage-block-3 {
-      width: 800px; } }
+      width: 800px;
+      margin: 0 auto; } }
   @media screen and (max-width: 850px) {
     #stage-block-3 {
-      opacity: 1;
-      position: unset;
+      display: flex;
       height: auto;
       width: 100%; } }
 
 #stage-block-4 {
   scroll-snap-align: start;
-  height: 435px;
+  height: auto;
   box-sizing: border-box;
   display: flex;
-  position: absolute;
-  opacity: 0;
+  position: sticky;
+  display: none;
   width: 1000px;
-  top: 400px; }
+  top: 0; }
   @media screen and (max-width: 1024px) {
     #stage-block-4 {
-      width: 800px; } }
+      width: 800px;
+      margin: 0 auto; } }
   @media screen and (max-width: 850px) {
     #stage-block-4 {
-      opacity: 1;
-      position: unset;
+      display: flex;
       height: auto;
       width: 100%; } }
 
 .stages-flex {
-  opacity: 1 !important;
-  visibility: visible;
-  transition-delay: 0.5s; }
+  display: flex !important; }
 
 .stages-none {
-  opacity: 0 !important;
-  visibility: hidden;
-  transition: opacity 1s, visibility 0s linear 1s; }
+  display: none !important; }
 
 .stage__blocks {
-  height: 690px; }
+  height: 790px; }
+  @media screen and (max-width: 1024px) {
+    .stage__blocks {
+      height: 800px; } }
   @media screen and (max-width: 850px) {
     .stage__blocks {
       height: auto;
       display: flex;
       flex-direction: column;
       row-gap: 60px; } }
-
-.stage::-webkit-scrollbar {
-  width: 0; }
 
 .stage__img_mobile {
   display: none; }
@@ -939,6 +950,9 @@ body {
 @media screen and (max-width: 768px) {
   .stage__info {
     width: 100%; } }
+
+.stage::-webkit-scrollbar {
+  width: 0; }
 
 .key__info {
   width: 55%; }
@@ -972,6 +986,14 @@ body {
   line-height: 48px;
   text-transform: uppercase;
   margin-bottom: 10px; }
+  @media screen and (max-width: 425px) {
+    .key__info-title {
+      font-size: 35px;
+      line-height: 40px; } }
+  @media screen and (max-width: 320px) {
+    .key__info-title {
+      font-size: 32px;
+      line-height: 40px; } }
 
 .key__info-subtitle {
   color: #8AC600;
@@ -984,7 +1006,7 @@ body {
   font-size: 14px;
   line-height: 14px;
   max-width: 140px;
-  margin-bottom: 45px; }
+  margin-bottom: 20px; }
 
 .key__info-description-2 {
   font-weight: 300;
@@ -1223,15 +1245,19 @@ body {
     height: 41px;
     position: absolute;
     top: 0;
-    left: 110%; }
+    left: 90%; }
     @media screen and (max-width: 650px) {
       .logo-2::after {
-        top: 50px;
+        top: 150px;
         left: 0; } }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 500px) {
       .logo-2::after {
-        top: 50px;
-        left: 110%; } }
+        top: 160px;
+        left: 0; } }
+    @media screen and (max-width: 375px) {
+      .logo-2::after {
+        top: 180px;
+        left: 0; } }
 
 .key__img-b-4 {
   margin-top: 40px; }
@@ -1247,8 +1273,7 @@ body {
 
 .key__number-item-4 {
   display: flex;
-  align-items: center;
-  width: 140px; }
+  align-items: center; }
 
 .key__number-info-4 {
   font-weight: 300;
@@ -1258,7 +1283,7 @@ body {
   margin-left: 20px; }
 
 .key__number-4 {
-  max-width: 320px;
+  max-width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1317,6 +1342,12 @@ body {
 .key__img_425-4 {
   position: relative;
   left: -20px; }
+
+.key__info-title_subtitle {
+  font-size: 20px;
+  text-transform: uppercase;
+  max-width: 70%;
+  margin-bottom: 20px; }
 
 .contact {
   position: relative; }

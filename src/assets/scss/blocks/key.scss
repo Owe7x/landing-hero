@@ -31,6 +31,14 @@
         line-height: 48px;
         text-transform: uppercase;
         margin-bottom: 10px;
+        @include breakpoint($bp-425) {
+            font-size: 35px;
+            line-height: 40px;
+        }
+        @include breakpoint($bp-320) {
+            font-size: 32px;
+            line-height: 40px;
+        }
     }
     &__info-subtitle {
         color: #8AC600;
@@ -43,7 +51,7 @@
         font-size: 14px;
         line-height: 14px;
         max-width: 140px;
-        margin-bottom: 45px;
+        margin-bottom: 20px;
     }
     &__info-description-2 {
         font-weight: 300;
@@ -290,14 +298,18 @@
         height: 41px;
         position: absolute;
         top: 0;
-        left: 110%;
+        left: 90%;
         @include breakpoint($bp-650) {
-            top: 50px;
+            top: 150px;
             left: 0;
         }
-        @include breakpoint($bp-320) {
-            top: 50px;
-            left: 110%;
+        @include breakpoint($bp-500) {
+            top: 160px;
+            left: 0;
+        }
+        @include breakpoint($bp-375) {
+            top: 180px;
+            left: 0;
         }
     }
 }
@@ -316,7 +328,7 @@
 .key__number-item-4 {
     display: flex;
     align-items: center;
-    width: 140px;
+    
 }
 .key__number-info-4 {
     font-weight: 300;
@@ -326,7 +338,7 @@
     margin-left: 20px;
 }
 .key__number-4 {
-    max-width: 320px;
+    max-width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -386,4 +398,10 @@
 .key__img_425-4 {
     position: relative;
     left: -20px;
+}
+.key__info-title_subtitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    max-width: 70%;
+    margin-bottom: 20px;
 }
