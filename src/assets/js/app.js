@@ -188,3 +188,20 @@ $(document).ready(function() {
         $('.header-content__mobile').toggleClass('open-menu');
 	});
 });
+
+
+
+$("#key-click").on("click", function (event) {
+    event.preventDefault();
+    ScrollTop ("#key")
+});
+$(".scrollToForm").on("click", function (event) {
+    event.preventDefault();
+    ScrollTop ("#contact")
+});
+
+
+function ScrollTop (scrollTo) {
+    var top = $(scrollTo).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+}

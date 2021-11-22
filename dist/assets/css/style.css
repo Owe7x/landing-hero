@@ -1151,6 +1151,7 @@ body {
         display: flex;
         height: auto;
         width: 100%;
+        opacity: 1;
     }
 }
 
@@ -1180,6 +1181,7 @@ body {
         display: flex;
         height: auto;
         width: 100%;
+        opacity: 1;
     }
 }
 
@@ -1209,6 +1211,7 @@ body {
         display: flex;
         height: auto;
         width: 100%;
+        opacity: 1;
     }
 }
 

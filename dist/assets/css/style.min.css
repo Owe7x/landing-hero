@@ -561,8 +561,8 @@ body {
         width: 100%; } }
 
 .main-text {
-  font-size: 40px;
-  line-height: 49px;
+  font-size: 55px;
+  line-height: 120%;
   text-transform: uppercase;
   margin-bottom: 30px; }
 
@@ -620,6 +620,10 @@ body {
   @media screen and (max-width: 425px) {
     .btn__long {
       max-width: 280px; } }
+
+#project-click {
+  position: relative;
+  z-index: 3; }
 
 .second-screen-blocks {
   margin-top: 51px;
@@ -868,7 +872,9 @@ body {
   background-color: #000;
   width: 1000px;
   top: 0;
-  opacity: 0; }
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 2s ease-in-out; }
   @media screen and (max-width: 1024px) {
     #stage-block-2 {
       width: 800px;
@@ -923,7 +929,10 @@ body {
       opacity: 1; } }
 
 .stages-flex {
-  opacity: 1 !important; }
+  position: absolute;
+  top: 0;
+  opacity: 1 !important;
+  transform: scale(1) !important; }
 
 .stages-none {
   opacity: 0 !important; }
@@ -1588,12 +1597,13 @@ textarea {
   .bg::after {
     display: block;
     content: '';
-    background-image: url(../images/contact-bg.png);
-    width: 492px;
-    height: 260px;
+    background-image: url(../images/wifi.gif);
+    width: 410px;
+    height: 540px;
+    transform: scale(2);
     position: absolute;
-    top: 160px;
-    right: -235px; }
+    top: 120px;
+    right: -135px; }
     @media screen and (max-width: 1024px) {
       .bg::after {
         display: none; } }

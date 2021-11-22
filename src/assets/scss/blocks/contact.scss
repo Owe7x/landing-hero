@@ -147,12 +147,13 @@ textarea {
     &::after {
         display: block;
         content: '';
-        background-image: url(../images/contact-bg.png);
-        width: 492px;
-        height: 260px;
+        background-image: url(../images/wifi.gif);
+        width: 410px;
+        height: 540px;
+        transform: scale(2);
         position: absolute;
-        top: 160px;
-        right: -235px;
+        top: 120px;
+        right: -135px;
         @include breakpoint($bp-1024) {
             display: none;
         }
