@@ -20,9 +20,10 @@ body {
     box-sizing: border-box;
 }
 .container {
-    max-width: 1000px;
+    max-width: 1076px;
     margin: 0 auto;
     padding: 0 30px;
+    box-sizing: border-box;
     @include breakpoint($bp-425) {
        padding: 0 15px
     }

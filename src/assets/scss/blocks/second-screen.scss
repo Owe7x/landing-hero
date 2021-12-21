@@ -14,7 +14,7 @@
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        padding: 20px 28px 21px;
+        padding: 20px 22px 21px;
         background: #000;
         position: absolute;
         cursor: pointer;
@@ -37,20 +37,25 @@
         }
     }
 }
-#block-1-text {
+.block-1-text {
     opacity: 0;
+    display: none;
 }
-#block-2-text {
+.block-2-text {
     opacity: 0;
+    display: none;
 }
-#block-3-text {
+.block-3-text {
     opacity: 0;
+    display: none;
 }
-#block-4-text {
+.block-4-text {
     opacity: 0;
+    display: none;
 }
-#block-5-text {
+.block-5-text {
     opacity: 0;
+    display: none;
 }
 #block-6-text {
     opacity: 0;

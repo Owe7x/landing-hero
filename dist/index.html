@@ -16,46 +16,49 @@
 </head>
 <body>
     <div style="max-width: 1920px; margin: 0 auto; overflow: hidden;">
-        <div style="max-width: 1440px; margin: 0 auto; ">
-                <header class="header">
-                    <div class="container">
-                        <div class="header-content">
-                            <div class="header-logo">
-                                <a href="/"><img src="assets/images/logo.svg" alt=""></a>
-                            </div>
-                            <div class="header-menu">
-                                <nav class="header-nav">
-                                    <ul class="header-ul">
-                                        <a href="/"><li class="header__link">преимущества</li></a>
-                                        <a href="" id="key-click"><li class="header__link">опыт и кейсы</li></a>
-                                        <a href=""><li class="header__link">возможности таргета</li></a>
-                                        <a href=""><li class="header__link">о нас</li></a>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="header-mail">
-                                <a href="mailto:more@heroinmarketing.com">more@heroinmarketing.com</a>
-                            </div>
-                            <div class="menu-burger__header">
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="header-content__mobile">
-                            <img src="assets/images/logo.svg" alt="" class="header-mobile__logo">
-                            <ul class="header-ul__mobile">
-                                <a href=""><li class="header__link_mobile">преимущества</li></a>
-                                <a href=""><li class="header__link_mobile">опыт и кейсы</li></a>
-                                <a href=""><li class="header__link_mobile">возможности таргета</li></a>
-                                <a href=""><li class="header__link_mobile">о нас</li></a>
-                            </ul>
-                            <a href="mailto:more@heroinmarketing.com" class="header-mobile_email">more@heroinmarketing.com</a>
-                        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-logo">
+                        <a href="/"><img src="assets/images/logo.svg" alt=""></a>
                     </div>
-                </header>
+                    <div class="header-menu">
+                        <nav class="header-nav">
+                            <ul class="header-ul">
+                                <a href="" id="products-click"><li class="header__link">наши продукты</li></a>
+                                <a href="" id="stage-click"><li class="header__link">этапы разработки</li></a>
+                                <a href="" id="key-click"><li class="header__link">наши кейсы</li></a>
+                                <a href="" id="also-click"><li class="header__link">также умеем</li></a>
+                                <a href="" id="about-click"><li class="header__link">о нас</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-mail">
+                        <a href="mailto:more@heroinmarketing.com">more@heroinmarketing.com</a>
+                    </div>
+                    <div class="menu-burger__header">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="header-content__mobile">
+                    <img src="assets/images/logo.svg" alt="" class="header-mobile__logo">
+                    <ul class="header-ul__mobile">
+                        <a href="" id="products-click-mobile"><li class="header__link_mobile">наши продукты</li></a>
+                        <a href="" id="stage-click-mobile"><li class="header__link_mobile">этапы разработки</li></a>
+                        <a href="" id="key-click-mobile"><li class="header__link_mobile">наши кейсы</li></a>
+                        <a href="" id="also-click-mobile"><li class="header__link_mobile">также умеем</li></a>
+                        <a href="" id="about-click-mobile"><li class="header__link_mobile">о нас</li></a>
+                    </ul>
+                    <a href="mailto:more@heroinmarketing.com" class="header-mobile_email">more@heroinmarketing.com</a>
+                </div>
+            </div>
+        </header>
+        <div style="max-width: 1440px; margin: 0 auto; ">
+                
 
 
                 
-                <section class="first-screen">
+                <section class="first-screen" id="advantages">
                     <div class="container">
                         <div class="first-screen-blocks">
                             <div class="first-screen-img_mobile">
@@ -84,7 +87,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="second-screen">
+                <section class="second-screen" id="products">
                     <div class="container">
                         <div class="second-screen-subtitle">
                             <p class="subtitle">
@@ -101,13 +104,17 @@
                                         Мобильные приложения
                                     </div>
                                     <div class="second-screen-block__ul">
-                                        <li class="second-screen-block__li">- Android, IOS</li>
-                                        <li class="second-screen-block__li">Разработка приложений любой сложности</li>
-                
+                                        <li class="second-screen-block__li">- Анализируем цели и задачи проекта</li>
+                                        <li class="second-screen-block__li">- Готовим сценарии использования приложения</li>
+                                        <li class="second-screen-block__li block-1-text" >- Консультируем и предлагаем варианты решения задач проекта</li>
+                                        <li class="second-screen-block__li block-1-text" >- Готовим смету и обозначаем сроки </li>
+                                        <li class="second-screen-block__li block-1-text" >- Продумываем и проектируем дизайн </li>
+                                        <li class="second-screen-block__li block-1-text" >- Разрабатываем приложение</li>
+                                        <li class="second-screen-block__li block-1-text" >- Выпускаем и поддерживаем его корректную работу</li>
                                     </div>
                                     <div class="second-screen-block__brands">
                                         <div class="brands">
-                                            <img src="assets/images/five.png" alt="">
+                                            <img src="assets/images/pyaterochka.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -123,11 +130,15 @@
                                         или обучения 
                                     </div>
                                     <div class="second-screen-block__ul">
-                                        <li class="second-screen-block__li">Форумы, онлайн-трансляции</li>
+                                        <li class="second-screen-block__li">- Он-лайн трансляции</li>
+                                        <li class="second-screen-block__li">- Конференции</li>
+                                        <li class="second-screen-block__li block-2-text" >- Форумы</li>
+                                        <li class="second-screen-block__li block-2-text" >- Образовательные курсы </li>
                 
                                     </div>
                                     <div class="second-screen-block__brands">
                                         <div class="brands">
+                
                                             <img src="assets/images/brands-2.png" alt="">
                                         </div>
                                     </div>
@@ -142,9 +153,9 @@
                                         Промо страницы
                                     </div>
                                     <div class="second-screen-block__ul">
-                                        <li class="second-screen-block__li">- Android, IOS</li>
-                                        <li class="second-screen-block__li">Разработка приложений любой сложности</li>
-                                        <li class="second-screen-block__li" id="block-3-text">Разработка приложений любой сложности</li>
+                                        <li class="second-screen-block__li">- Сайт-визитка</li>
+                                        <li class="second-screen-block__li">- Каталог</li>
+                                        <li class="second-screen-block__li block-3-text">- Интернет-магазин</li>
                                     </div>
                                     <div class="second-screen-block__brands">
                                         <div class="brands">
@@ -163,9 +174,11 @@
                                         и системы лояльности 
                                     </div>
                                     <div class="second-screen-block__ul">
-                                        <li class="second-screen-block__li">- Android, IOS</li>
-                                        <li class="second-screen-block__li">Разработка приложений любой сложности</li>
-                                        <li class="second-screen-block__li" id="block-4-text">Разработка приложений любой сложности</li>
+                                        <li class="second-screen-block__li">- внедряем систему личных кабинетов;</li>
+                                        <li class="second-screen-block__li">- разрабатываем идеи мобильных приложений</li>
+                                        <li class="second-screen-block__li block-4-text" >- оптимизируем их под все типы устройств</li>
+                                        <li class="second-screen-block__li block-4-text" >- решаем задачи проекта и достигаем его целей</li>
+                                        <li class="second-screen-block__li block-4-text" >- всегда на связи с клиентом</li>
                                     </div>
                                     <div class="second-screen-block__brands">
                                         <div class="brands">
@@ -184,8 +197,9 @@
                                         и продвижение сайтов
                                     </div>
                                     <div class="second-screen-block__ul">
-                                        <li class="second-screen-block__li">Разработка приложений любой сложности</li>
-                                        <li class="second-screen-block__li" id="block-5-text">Разработка приложений любой сложности</li>
+                                        <li class="second-screen-block__li">- Придумываем и создаем сайты</li>
+                                        <li class="second-screen-block__li block-5-text" >- Поддерживаем их корректную работу</li>
+                                        <li class="second-screen-block__li block-5-text" >- Повышаем конверсию (SEO, контекстная и таргетированная реклама, уровень юзабилити, продвижение в соцсетях и т.д.) </li>
                                     </div>
                                     <div class="second-screen-block__brands">
                                         <div class="brands">
@@ -222,7 +236,7 @@
                 </section>
                 
                 <div class="grid-2"></div>
-                <div class="container">
+                <div class="container" id="stage">
                     <h2 class="stage__title">Этапы разработки</h2>
                 </div>
                 <div class="scroll">
@@ -594,7 +608,7 @@
                         </div>
                     </section>
                 </div>
-                <section class="also">
+                <section class="also" id="also">
                     <div class="container">
                         <div class="also__title">
                             ТАКЖЕ УМЕЕМ:
@@ -636,7 +650,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="about">
+                <section class="about" id="about">
                     <div class="container">
                         <div class="about__blocks">
                             <div class="about__block">
