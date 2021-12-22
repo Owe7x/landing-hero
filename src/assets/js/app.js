@@ -181,7 +181,8 @@ if (window.matchMedia('(max-width: 1400px)').matches)  {
 $('.stage').scroll(function() {
 
 	var target = $(this).scrollTop();
-    
+
+
 	if(target >= 0) {
         $('#stage-block-1').addClass('stages-flex')
         $('#stage-block-1').removeClass('stages-none')
@@ -189,6 +190,7 @@ $('.stage').scroll(function() {
         $('#stage-block-2').removeClass('stages-flex')
         $('#stage-block-2').addClass('stages-none')
 	}
+
     if(target >= 500) {
         $('#stage-block-1').addClass('stages-none')
         $('#stage-block-1').removeClass('stages-flex')
@@ -209,7 +211,7 @@ $('.stage').scroll(function() {
         $('#stage-block-2').removeClass('stages-flex')
         
         $('#stage-block-4').removeClass('stages-flex')
-    } 
+    }
     if(target >= 1500) {
         $('#stage-block-4').addClass('stages-flex')
         $('#stage-block-4').removeClass('stages-none')
